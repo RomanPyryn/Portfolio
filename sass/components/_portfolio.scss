@@ -1,0 +1,30 @@
+.portfolio__picture {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.portfolio__link {
+  display: block;
+  text-decoration-line: underline;
+
+  transform: scale(1);
+
+  transition: color 300ms $cubic, transform 300ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color_hover;
+    transform: scale(1.25);
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+
+.portfolio__picture img {
+margin-left: auto;
+margin-right: auto;
+}
+
+

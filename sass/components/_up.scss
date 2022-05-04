@@ -1,0 +1,9 @@
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 40px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 10; /* Make sure it does not overlap */
+  background-color: transparent; /* Set a background color */
+  border: none;
+}

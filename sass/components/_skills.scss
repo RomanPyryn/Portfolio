@@ -1,0 +1,40 @@
+.skills__text {
+  margin-bottom: 70px;
+}
+
+.programs {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programs__item:not(:last-child) {
+  margin-bottom: 80px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+}
+
+.programs__icon {
+  margin-bottom: 25px;
+}
+
+.programs__name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+
+  color: $color_text-third;
+
+  margin-bottom: 40px;
+}
+
+.progams__star-grey {
+  fill: $color_star-secondary;
+}
+
+.progams__star:not(:last-child) {
+  margin-right: 10px;
+}
