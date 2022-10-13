@@ -1,6 +1,13 @@
 .hero {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding: 10px 0;
+
+  @media screen and (min-width: 768px) {
+      padding: 60px 0;
+    }
+
+  & picture {
+    margin: 0 auto;
+  }
 }
 
 .hero__box {
@@ -33,7 +40,7 @@
   display: flex;
   position: absolute;
   top: 0;
-  right: 29px;
+  right: 10px;
   justify-content: center;
   align-items: center;
   margin: 0;

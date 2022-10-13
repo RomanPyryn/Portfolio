@@ -1,3 +1,9 @@
+.portfolio__item {
+  &:not(:last-child) {
+      margin-bottom: 80px;
+    }
+}
+
 .portfolio__picture {
   display: block;
   margin-bottom: 30px;
@@ -5,6 +11,7 @@
 
 .portfolio__link {
   display: block;
+  margin-bottom: 10px;
   text-decoration-line: underline;
 
   transform: scale(1);
@@ -15,10 +22,6 @@
   &:focus {
     color: $color_hover;
     transform: scale(1.25);
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 80px;
   }
 }
 

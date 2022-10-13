@@ -45,17 +45,14 @@ body {
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 29px;
-  padding-right: 29px;
+  max-width: 475px;
 
-  @media screen and (min-width: 375px) {
-    width: 375px;
-  }
+  margin: 0 auto;
+  padding: 0 10px;
 
   @media screen and (min-width: 768px) {
-    width: 945px;
+    max-width: 945px;
+    padding: 0 30px;
   }
 }
 

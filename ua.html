@@ -50,7 +50,7 @@
 
             <p class="hero__text">
               Junior Frontend Developer <br />
-              31 рік, Вінниця
+              32 роки, Вінниця
             </p>
 
             <ul class="lang">
@@ -133,11 +133,7 @@
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
-                <svg
-                  class="progams__star progams__star-grey"
-                  width="20"
-                  height="20"
-                >
+                <svg class="progams__star" width="20" height="20">
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
@@ -168,11 +164,7 @@
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
-                <svg
-                  class="progams__star progams__star-grey"
-                  width="20"
-                  height="20"
-                >
+                <svg class="progams__star" width="20" height="20">
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
@@ -199,11 +191,7 @@
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
-                <svg
-                  class="progams__star progams__star-grey"
-                  width="20"
-                  height="20"
-                >
+                <svg class="progams__star" width="20" height="20">
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
@@ -226,9 +214,9 @@
             </li>
             <li class="programs__item">
               <svg class="programs__icon" width="90" height="90">
-                <use href="./img/icons.svg#git"></use>
+                <use href="./img/icons.svg#react"></use>
               </svg>
-              <p class="programs__name">GitHub</p>
+              <p class="programs__name">React</p>
               <div class="programs__level">
                 <svg class="progams__star" width="20" height="20">
                   <use href="./img/icons.svg#star"></use>
@@ -261,9 +249,9 @@
             </li>
             <li class="programs__item">
               <svg class="programs__icon" width="90" height="90">
-                <use href="./img/icons.svg#figma"></use>
+                <use href="./img/icons.svg#node"></use>
               </svg>
-              <p class="programs__name">Figma</p>
+              <p class="programs__name">Node.js</p>
               <div class="programs__level">
                 <svg class="progams__star" width="20" height="20">
                   <use href="img/icons.svg#star"></use>
@@ -273,7 +261,11 @@
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
-                <svg class="progams__star" width="20" height="20">
+                <svg
+                  class="progams__star progams__star-grey"
+                  width="20"
+                  height="20"
+                >
                   <use href="./img/icons.svg#star"></use>
                 </svg>
 
@@ -302,43 +294,49 @@
         <div class="container">
           <h2 class="section__title">Портфоліо</h2>
 
-          <picture class="portfolio__picture">
-            <source
-              media="(min-width: 768px)"
-              srcset="./img/2d.jpg 1x, ./img/2d@2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 320px)"
-              srcset="./img/2m.jpg 1x, ./img/2m@2x.jpg 2x"
-            />
-            <img src="./img/2d.jpg" alt="Студія дизайну - Домашня сторінка" />
-          </picture>
+          <div class="portfolio__item">
+            <picture class="portfolio__picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/2d.jpg 1x, ./img/2d@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="./img/2m.jpg 1x, ./img/2m@2x.jpg 2x"
+              />
+              <img src="./img/2d.jpg" alt="Студія дизайну - Домашня сторінка" />
+            </picture>
 
-          <a
-            class="portfolio__link"
-            target="blank"
-            href="https://romanpyryn.github.io/goit-markup-hw-08/"
-            >Студія дизайну - Домашня сторінка</a
-          >
+            <a
+              class="portfolio__link"
+              target="blank"
+              href="https://romanpyryn.github.io/goit-markup-hw-08/"
+              >Студія дизайну - Домашня сторінка</a
+            >
+            <p>[html, css, sass, js]</p>
+          </div>
 
-          <picture class="portfolio__picture">
-            <source
-              media="(min-width: 768px)"
-              srcset="./img/3d.jpg 1x, ./img/3d@2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 320px)"
-              srcset="./img/3m.jpg 1x, ./img/3m@2x.jpg 2x"
-            />
-            <img src="./img/3d.jpg" alt="МОРОЗИВО - Командний проект" />
-          </picture>
+          <div class="portfolio__item">
+            <picture class="portfolio__picture">
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/3d.jpg 1x, ./img/3d@2x.jpg 2x"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="./img/3m.jpg 1x, ./img/3m@2x.jpg 2x"
+              />
+              <img src="./img/3d.jpg" alt="МОРОЗИВО - Командний проект" />
+            </picture>
 
-          <a
-            class="portfolio__link"
-            target="blank"
-            href="https://anastasiia-tarasiuk.github.io/ice-cream-page/"
-            >МОРОЗИВО - Командний проект</a
-          >
+            <a
+              class="portfolio__link"
+              target="blank"
+              href="https://anastasiia-tarasiuk.github.io/ice-cream-page/"
+              >МОРОЗИВО - Командний проект</a
+            >
+            <p>[html, css, sass, js]</p>
+          </div>
         </div>
       </section>
       <!--Contacts-->
@@ -348,7 +346,9 @@
 
           <p class="contacts__text">Хочете дізнатися більше? Ласкаво прошу!</p>
 
-          <button class="button" type="button">Напишіть мені</button>
+          <a href="mailto:p27roman@gmail.com"
+            ><button class="button" type="button">Напишіть мені</button></a
+          >
 
           <div class="social">
             <a
