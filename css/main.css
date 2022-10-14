@@ -146,10 +146,6 @@ body {
   }
 }
 
-.hero picture {
-  margin: 0 auto;
-}
-
 .hero__box {
   margin-bottom: 40px;
 }
@@ -190,8 +186,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: 15px;
+  right: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
