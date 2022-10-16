@@ -3,10 +3,12 @@
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 70px 29px;
+    padding: 90px 29px;
+
+    text-align: right;
 
     background-color: $color_bg-primary;
 
@@ -28,8 +30,8 @@
   display: block;
 
   font-weight: 700;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.2;
 
   color: $color_text-third;
 
@@ -57,6 +59,6 @@
 
 .menu__item:not(:last-child) {
   @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
 }

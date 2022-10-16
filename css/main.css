@@ -147,6 +147,7 @@ body {
 }
 
 .hero__box {
+  display: inline-block;
   margin-bottom: 40px;
 }
 
@@ -165,10 +166,12 @@ body {
 }
 
 .hero__title {
+  position: relative;
   font-weight: 700;
   font-size: 47px;
   line-height: 58px;
   margin-bottom: 25px;
+  z-index: 9;
 }
 
 @media screen and (min-width: 768px) {
@@ -259,10 +262,11 @@ body {
     display: none;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     min-height: 100vh;
-    padding: 70px 29px;
+    padding: 90px 29px;
+    text-align: right;
     background-color: #fff;
     z-index: 9;
   }
@@ -289,8 +293,8 @@ body {
 .menu__item {
   display: block;
   font-weight: 700;
-  font-size: 34px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.2;
   color: #828282;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -320,7 +324,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .menu__item:not(:last-child) {
-    margin-bottom: 60px;
+    margin-bottom: 35px;
   }
 }
 
