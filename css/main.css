@@ -386,7 +386,6 @@ body {
 
 .container--contacts {
   position: relative;
-  min-height: 100vh;
 }
 
 .contacts__text {
@@ -454,6 +453,7 @@ body {
 
 .signature {
   color: #828282;
+  margin-bottom: 50px;
 }
 
 .copy {
