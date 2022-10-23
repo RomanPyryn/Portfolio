@@ -1,3 +1,8 @@
+.container--contacts {
+  position: relative;
+  min-height: 100vh;
+}
+
 .contacts__text {
   margin-bottom: 40px;
 
@@ -58,4 +63,11 @@
 
 .signature {
   color: $color_text-third;
+}
+
+.copy {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate3d(-50%, 0, 0);
 }
