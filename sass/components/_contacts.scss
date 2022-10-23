@@ -1,5 +1,6 @@
 .container--contacts {
   position: relative;
+  padding-bottom: 50px;
 }
 
 .contacts__text {
@@ -62,7 +63,6 @@
 
 .signature {
   color: $color_text-third;
-  margin-bottom: 50px;
 }
 
 .copy {
