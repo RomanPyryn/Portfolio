@@ -73,12 +73,6 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header--line {
-    border-bottom: 1px solid #828282;
-  }
-}
-
 .section {
   padding-top: 80px;
   padding-bottom: 80px;
@@ -122,6 +116,13 @@ body {
 @media screen and (min-width: 768px) {
   #scrollToTopBtn {
     right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 }
 
@@ -386,7 +387,7 @@ body {
 
 .container--contacts {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .contacts__text {
@@ -458,6 +459,7 @@ body {
 
 .copy {
   position: absolute;
+  font-size: 16px;
   left: 50%;
   bottom: 0;
   -webkit-transform: translate3d(-50%, 0, 0);

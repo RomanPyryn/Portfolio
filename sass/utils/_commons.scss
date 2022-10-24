@@ -72,12 +72,6 @@ body {
   }
 }
 
-.header--line {
-  @media screen and (min-width: 768px) {
-    border-bottom: 1px solid $color_text-third;
-  }
-}
-
 .section {
   padding-top: 80px;
   padding-bottom: 80px;

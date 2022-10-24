@@ -1,6 +1,6 @@
 .container--contacts {
   position: relative;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .contacts__text {
@@ -67,6 +67,7 @@
 
 .copy {
   position: absolute;
+  font-size: 16px;
   left: 50%;
   bottom: 0;
   transform: translate3d(-50%, 0, 0);
