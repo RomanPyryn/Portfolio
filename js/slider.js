@@ -1,16 +1,17 @@
 var swiper = new Swiper(".swiper", {
-  cssMode: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".slider-arrow-next",
+    prevEl: ".slider-arrow-prev",
+	},
+	pagination: {
+    el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: true,
   },
-  pagination: {
-    el: ".swiper-pagination",
-  },
+  cssMode: true,
   mousewheel: true,
-  keyboard: true,
+	keyboard: true,
+	loop: true,
 });
 
 const next = document.querySelector(".swiper-button-next");
-
-next.addEventListener('click', () => console.log("=>"));
