@@ -6,6 +6,7 @@
   z-index: 10; /* Make sure it does not overlap */
   background-color: transparent; /* Set a background color */
   border: none;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     right: 30px;
