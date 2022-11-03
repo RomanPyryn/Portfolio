@@ -1,6 +1,6 @@
 .menu {
   @media screen and (max-width: 767px) {
-    display: none;
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
@@ -12,17 +12,22 @@
 
     background-color: $color_bg-primary;
 
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms $cubic;
+
     z-index: 9;
+  }
+
+  &.is-open {
+    visibility: visible;
+    opacity: 1;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  &.is-open {
-    display: block;
   }
 }
 
