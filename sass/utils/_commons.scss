@@ -60,12 +60,6 @@ body {
   position: relative;
 }
 
-.container--about {
-  @media screen and (min-width: 768px) {
-    width: 475px;
-  }
-}
-
 .container--contacts {
   @media screen and (min-width: 768px) {
     width: 400px;
@@ -81,6 +75,10 @@ body {
   @media screen and (min-width: 768px) {
     padding-top: 100px;
     padding-bottom: 100px;
+    &.section--about {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &:nth-child(2n) {
