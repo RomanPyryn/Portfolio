@@ -41,6 +41,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 1.25;
+  text-align: center;
   color: #000000;
   background-color: #fff;
 }
@@ -127,6 +128,7 @@ body {
 
 .hero {
   padding: 10px 0;
+  text-align: start;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -568,11 +570,6 @@ body {
   right: 1rem;
 }
 
-.container--contacts {
-  position: relative;
-  padding-bottom: 30px;
-}
-
 .contacts__text {
   margin-bottom: 40px;
   color: #090909;
@@ -640,10 +637,6 @@ body {
 }
 
 .copy {
-  position: absolute;
-  font-size: 16px;
-  left: 50%;
-  bottom: 0;
-  -webkit-transform: translate3d(-50%, 0, 0);
-          transform: translate3d(-50%, 0, 0);
+  font-size: 14px;
+  padding-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

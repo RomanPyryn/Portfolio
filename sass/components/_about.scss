@@ -1,19 +1,19 @@
 .about__content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 50px;
-	@media screen and (min-width: 768px) {
-		flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
   }
 }
 
 .about__text {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 50px;
-	max-width: 415px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 415px;
 }
