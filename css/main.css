@@ -555,7 +555,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .slider-arrow-prev,
-.slider-arrow-next {
+  .slider-arrow-next {
     display: block;
   }
 }
