@@ -3,9 +3,11 @@
 }
 
 .programs {
+	margin-bottom: 80px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+		// margin-bottom: 50px;
   }
 }
 
@@ -25,16 +27,23 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.2;
-
   color: $color_text-third;
-
-  margin-bottom: 40px;
 }
 
-.progams__star-grey {
-  fill: $color_star-secondary;
+.libs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 50px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
 }
 
-.progams__star:not(:last-child) {
-  margin-right: 10px;
+.libs__item,
+.libs__item svg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
