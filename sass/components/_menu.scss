@@ -5,7 +5,7 @@
     right: 0;
     width: 100%;
     min-height: 100%;
-    padding: 90px 29px;
+    padding: 120px 29px 90px;
 
     text-align: right;
 
@@ -43,21 +43,14 @@
   font-size: 28px;
   line-height: 1.2;
 
-  color: $color_text-third;
-
-  transform: scale(1);
-
-  transition: color 300ms $cubic, transform 300ms $cubic;
+  transition: all 300ms $cubic;
 
   &:hover,
   &:focus {
     color: $color_hover;
-    transform: scale(0.9);
   }
 
   @media screen and (min-width: 768px) {
-    padding: 30px 0;
-
     font-size: 18px;
     line-height: 1.2;
   }
@@ -109,4 +102,23 @@
   &.is-open .icon__menu {
     display: none;
   }
+}
+
+.hover-3 {
+  --b: 0.1em;
+  /* the thickness of the line */
+  --c: #f72359;
+  /* the color */
+  color: $color_text-third;
+  padding-block: var(--b);
+  background: linear-gradient(var(--c) 50%, #000 0) 0% calc(100% - var(--_p, 0%)) / 100% 200%,
+    linear-gradient(var(--c) 0 0) 0% var(--_p, 0%) / var(--_p, 0%) var(--b) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.3s var(--_s, 0s) linear, background-size 0.3s calc(0.3s - var(--_s, 0s));
+}
+
+.hover-3:hover {
+  --_p: 100%;
+  --_s: 0.3s;
 }

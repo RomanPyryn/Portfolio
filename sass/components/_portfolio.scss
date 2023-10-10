@@ -113,40 +113,6 @@
   padding-bottom: 50px;
 }
 
-.slider-arrow-prev,
-.slider-arrow-next {
-  display: none;
-  position: absolute;
-  top: 50%;
-  width: 58px;
-  height: 58px;
-	padding: 5px;
-	transform: translateY(-50%);
-	fill: $color_text-second;
-	border-radius: 10px;
-	background: rgba(255, 255, 255, 0.6);
-  cursor: pointer;
-  z-index: 5;
-	transition: all 300ms $cubic;
-  @media screen and (min-width: 768px) {
-    display: block;
-  }
-		&:hover {
-			background: rgba(0, 0, 0, 0.6);
-			fill: white;
-		}
-		
-}
-
-.slider-arrow-prev {
-  left: 0;
-}
-
-.slider-arrow-next {
-	transform: rotate(180deg) translateY(50%);
-  right: 0;
-}
-
 .swiper-pagination-bullet-active.swiper-pagination-bullet {
 	background-color: $color_text-second;
 	scale: 1.2;

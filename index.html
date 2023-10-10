@@ -1,40 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name='freelancehunt' content='f50064c3164fd9f'>
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name='freelancehunt' content='f50064c3164fd9f'>
+    <title>Roman Pyryn</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="shortcut icon" type="image/png" href="./img/up.png" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
+      crossorigin="anonymous"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css"/>
+    <link rel="shortcut icon" type="image/png" href="./img/up.png"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="./js/upbutton.js" defer></script>
     <script src="./js/mobile-menu.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/slider.js" defer></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
-		<script src="./js/aos.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="./js/aos.js" defer></script>
+    <script src="./js/hover.js" defer></script>
   </head>
   <body>
     <!--Header-->
@@ -43,10 +34,10 @@
         <div class="menu" data-menu>
           <div class="menu__box">
             <a href="./index.html" class="menu__item" data-item>Home</a>
-            <a href="#to-about" class="menu__item" data-item>About me</a>
-            <a href="#to-skills" class="menu__item" data-item>Skills</a>
-            <a href="#to-portfolio" class="menu__item" data-item>Portfolio</a>
-            <a href="#to-contacts" class="menu__item" data-item>Contacts</a>
+            <a href="#to-about" class="menu__item hover-3" data-item>About me</a>
+            <a href="#to-skills" class="menu__item hover-3" data-item>Skills</a>
+            <a href="#to-portfolio" class="menu__item hover-3" data-item>Portfolio</a>
+            <a href="#to-contacts" class="menu__item hover-3" data-item>Contacts</a>
           </div>
         </div>
       </div>
@@ -58,44 +49,28 @@
         <div class="container container--reletive">
           <div class="hero__box">
             <h1 class="hero__title animate__animated animate__bounceInLeft">
-              Roman <br />
-              Pyryn
+              Roman <br/> Pyryn
             </h1>
-
             <p class="hero__text">
-              Frontend Developer <br />
-							at <span class="text__bold">SoftRyzen</span> <br />
-              Vinnytsia, Ukraine
+              Frontend Developer <br/> at
+              <span class="text__bold">Baza Trainee</span>
+              <br/> Vinnytsia, Ukraine
             </p>
-
             <ul class="lang">
               <li class="lang__item">
-                <a href="./ua.html" class="lang__link">UA</a>
+                <a href="./ua.html" class="lang__link hover-3">UA</a>
               </li>
               <li class="lang__item current">
                 <a href="./index.html" class="lang__link">ENG</a>
               </li>
             </ul>
           </div>
-
           <picture title="Roman Pyryn">
-            <source
-              media="(min-width: 768px)"
-              srcset="./img/1d.jpeg 1x, ./img/1d@2x.jpeg 2x"
-            />
-            <source
-              media="(min-width: 320px)"
-              srcset="./img/1m.jpeg 1x, ./img/1m@2x.jpeg 2x"
-            />
-            <img src="./img/1d.jpeg" alt="Roman Pyryn" loading="lazy" />
+            <source media="(min-width: 768px)" srcset="./img/1d.jpeg 1x, ./img/1d@2x.jpeg 2x"/>
+            <source media="(min-width: 320px)" srcset="./img/1m.jpeg 1x, ./img/1m@2x.jpeg 2x"/>
+            <img src="./img/1d.jpeg" alt="Roman Pyryn" loading="lazy"/>
           </picture>
-
-          <button
-            class="menu__button"
-            type="button"
-            aria-expanded="false"
-            data-menu-button
-          >
+          <button class="menu__button" type="button" aria-expanded="false" data-menu-button>
             <svg class="menu__icon" width="32" height="25">
               <use class="icon__close" href="./img/icons.svg#close"></use>
               <use class="icon__menu" href="./img/icons.svg#menu"></use>
@@ -111,20 +86,20 @@
               <h2 class="section__title">About me</h2>
               <div class="about__text">
                 <p>
-                  Hi, I'm Roman - Frontend Developer from Vinnytsia. I'm
-                  interested in frontend and everything connected with it.
+                  Hi, I'm Roman -
+                  <strong>Frontend Developer</strong>
+                  from Vinnytsia. I'm interested in frontend and everything connected with
+                                    it.
                 </p>
-
-                <p>Completed the "Full Stack" course at GoIT.</p>
-
+                <p>Specialize in web application development.</p>
                 <p>
                   Ready to implement excellent projects with wonderful people.
                 </p>
               </div>
             </div>
-            <picture class="about__picture">
-              <source srcset="./img/8d.jpeg 1x, ./img/8d@2x.jpeg 2x" />
-              <img src="./img/8d.jpeg" alt="Certificate" loading="lazy" />
+            <picture class="about__picture" data-aos="fade-left" data-aos-delay="500" data-aos-offset="500">
+              <source srcset="./img/8d.jpeg 1x, ./img/8d@2x.jpeg 2x"/>
+              <img src="./img/8d.jpeg" alt="Certificate" loading="lazy"/>
             </picture>
           </div>
         </div>
@@ -133,128 +108,96 @@
       <section class="section" id="to-skills">
         <div class="container">
           <h2 class="section__title">Skills</h2>
-
           <p class="skills__text">I work with such technologies as</p>
-
           <ul class="programs">
-            <li class="programs__item"
-							data-aos="fade-in"
-    					data-aos-delay="1000">
+            <li class="programs__item" data-aos="fade-in" data-aos-delay="1000">
               <svg class="programs__icon" width="90" height="90" aria-label="html">
-								<title>html</title>
+                <title>html</title>
                 <use href="./img/icons.svg#html"></use>
               </svg>
               <p class="programs__name">HTML</p>
             </li>
-            <li class="programs__item"
-							data-aos="fade-in"
-    					data-aos-delay="500">
+            <li class="programs__item" data-aos="fade-in" data-aos-delay="500">
               <svg class="programs__icon" width="90" height="90" aria-label="CSS">
-								<title>CSS</title>
+                <title>CSS</title>
                 <use href="./img/icons.svg#css"></use>
               </svg>
               <p class="programs__name">CSS</p>
             </li>
-            <li class="programs__item"
-							data-aos="fade-in"
-    					data-aos-delay="250">
+            <li class="programs__item" data-aos="fade-in" data-aos-delay="250">
               <svg class="programs__icon" width="90" height="90" aria-label="Javascript">
-								<title>Javascript</title>
+                <title>Javascript</title>
                 <use href="./img/icons.svg#js"></use>
               </svg>
               <p class="programs__name">Javascript</p>
             </li>
-            <li class="programs__item"
-							data-aos="fade-in"
-    					data-aos-delay="750">
+            <li class="programs__item" data-aos="fade-in" data-aos-delay="750">
               <svg class="programs__icon" width="90" height="90" aria-label="React">
-								<title>React</title>
+                <title>React</title>
                 <use href="./img/icons.svg#react"></use>
               </svg>
               <p class="programs__name">React</p>
             </li>
-            <li class="programs__item"
-							data-aos="fade-in"
-    					data-aos-delay="1250">
+            <li class="programs__item" data-aos="fade-in" data-aos-delay="1250">
               <svg class="programs__icon" width="90" height="90" aria-label="Node.js">
-								<title>Node.js</title>
+                <title>Node.js</title>
                 <use href="./img/icons.svg#node"></use>
               </svg>
               <p class="programs__name">Node.js</p>
             </li>
           </ul>
-					<ul class="libs">
-						<li class="libs__item"
-							data-aos="fade-up"
-    					data-aos-delay="1500">
-							<svg width="60" height="60" aria-label="Git">
-								<title>Git</title>
+          <ul class="libs">
+            <li class="libs__item" data-aos="fade-up" data-aos-delay="1500">
+              <svg width="60" height="60" aria-label="Git">
+                <title>Git</title>
                 <use href="./img/icons.svg#git"></use>
               </svg>
-						</li>
-						<li class="libs__item"
-							data-aos="fade-up"
-    					data-aos-delay="500">
-							<svg width="60" height="60" aria-label="Nunjucks">
-								<title>Nunjucks</title>
+            </li>
+            <li class="libs__item" data-aos="fade-up" data-aos-delay="500">
+              <svg width="60" height="60" aria-label="Nunjucks">
+                <title>Nunjucks</title>
                 <use href="./img/icons.svg#nj"></use>
               </svg>
-						</li>
-						<li class="libs__item"
-							data-aos="fade-up"
-    					data-aos-delay="750">
-							<svg width="120" height="60" aria-label="Webpack">
-								<title>Webpack</title>
+            </li>
+            <li class="libs__item" data-aos="fade-up" data-aos-delay="750">
+              <svg width="120" height="60" aria-label="Webpack">
+                <title>Webpack</title>
                 <use href="./img/icons.svg#wp"></use>
               </svg>
-						</li>
-						<li class="libs__item"
-							data-aos="fade-up"
-    					data-aos-delay="1250">
-							<svg width="120" height="60" aria-label="Tailwindcss">
-								<title>Tailwindcss</title>
+            </li>
+            <li class="libs__item" data-aos="fade-up" data-aos-delay="1250">
+              <svg width="120" height="60" aria-label="Tailwindcss">
+                <title>Tailwindcss</title>
                 <use href="./img/icons.svg#tw"></use>
               </svg>
-						</li>
-						<li class="libs__item"
-							data-aos="fade-up"
-    					data-aos-delay="1750">
-							<svg width="60" height="60" aria-label="SASS">
-								<title>SASS</title>
+            </li>
+            <li class="libs__item" data-aos="fade-up" data-aos-delay="1750">
+              <svg width="60" height="60" aria-label="SASS">
+                <title>SASS</title>
                 <use href="./img/icons.svg#sass"></use>
               </svg>
-						</li>
-						<li class="libs__item"
-							data-aos="fade-up"
-    					data-aos-delay="1000">
-							<svg width="60" height="60" aria-label="Gulp">
-								<title>Gulp</title>
+            </li>
+            <li class="libs__item" data-aos="fade-up" data-aos-delay="1000">
+              <svg width="60" height="60" aria-label="Gulp">
+                <title>Gulp</title>
                 <use href="./img/icons.svg#gulp"></use>
               </svg>
-						</li>
-					</ul>
+            </li>
+          </ul>
         </div>
       </section>
       <!--Portfolio-->
       <section class="section" id="to-portfolio">
         <div class="container">
           <h2 class="section__title">Portfolio</h2>
-
           <div class="swiper">
             <div class="swiper-wrapper">
-							<div class="portfolio__item project swiper-slide">
+              <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/6d.jpeg 1x, ./img/6d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/6m.jpeg 1x, ./img/6m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/6d.jpeg 1x, ./img/6d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/6m.jpeg 1x, ./img/6m@2x.jpeg 2x"/>
                   <img src="./img/6d.jpeg" alt="Fairy forest"/>
                 </picture>
-
                 <div class="project__overlay">
                   <div class="project__info">
                     <h3 class="project__title">Fairy forest (parallax)</h3>
@@ -262,31 +205,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://romanpyryn.github.io/Parallax/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://romanpyryn.github.io/Parallax/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/RomanPyryn/Parallax"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/RomanPyryn/Parallax">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/9d.jpeg 1x, ./img/9d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/9m.jpeg 1x, ./img/9m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/9d.jpeg 1x, ./img/9d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/9m.jpeg 1x, ./img/9m@2x.jpeg 2x"/>
                   <img src="./img/9d.jpeg" alt="Petly"/>
                 </picture>
                 <div class="project__overlay">
@@ -298,31 +230,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://velogitara.github.io/petly-project-front/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://velogitara.github.io/petly-project-front/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/velogitara/petly-project-front"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/velogitara/petly-project-front">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/10d.jpeg 1x, ./img/10d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/10m.jpeg 1x, ./img/10m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/10d.jpeg 1x, ./img/10d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/10m.jpeg 1x, ./img/10m@2x.jpeg 2x"/>
                   <img src="./img/10d.jpeg" alt="Finance Ledger"/>
                 </picture>
                 <div class="project__overlay">
@@ -332,31 +253,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://romanpyryn.github.io/finance-ledger/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://romanpyryn.github.io/finance-ledger/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/RomanPyryn/finance-ledger"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/RomanPyryn/finance-ledger">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/11d.jpeg 1x, ./img/11d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/11m.jpeg 1x, ./img/11m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/11d.jpeg 1x, ./img/11d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/11m.jpeg 1x, ./img/11m@2x.jpeg 2x"/>
                   <img src="./img/11d.jpeg" alt="Social Network"/>
                 </picture>
                 <div class="project__overlay">
@@ -366,31 +276,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://romanpyryn.github.io/social-network/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://romanpyryn.github.io/social-network/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/RomanPyryn/social-network"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/RomanPyryn/social-network">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/4d.jpeg 1x, ./img/4d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/4m.jpeg 1x, ./img/4m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/4d.jpeg 1x, ./img/4d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/4m.jpeg 1x, ./img/4m@2x.jpeg 2x"/>
                   <img src="./img/4d.jpeg" alt="Filmoteka"/>
                 </picture>
                 <div class="project__overlay">
@@ -402,31 +301,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://lentuss.github.io/Filmoteka-5group/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://lentuss.github.io/Filmoteka-5group/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/Lentuss/Filmoteka-5group"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/Lentuss/Filmoteka-5group">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="portfolio__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/2d.jpeg 1x, ./img/2d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/2m.jpeg 1x, ./img/2m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/2d.jpeg 1x, ./img/2d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/2m.jpeg 1x, ./img/2m@2x.jpeg 2x"/>
                   <img src="./img/2d.jpeg" alt="Design studio"/>
                 </picture>
                 <div class="project__overlay">
@@ -436,31 +324,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://romanpyryn.github.io/goit-markup-hw-08/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://romanpyryn.github.io/goit-markup-hw-08/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/RomanPyryn/goit-markup-hw-08"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/RomanPyryn/goit-markup-hw-08">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/7d.jpeg 1x, ./img/7d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/7m.jpeg 1x, ./img/7m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/7d.jpeg 1x, ./img/7d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/7m.jpeg 1x, ./img/7m@2x.jpeg 2x"/>
                   <img src="./img/7d.jpeg" alt="Furniture"/>
                 </picture>
                 <div class="project__overlay">
@@ -470,31 +347,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://romanpyryn.github.io/Furniture.test/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://romanpyryn.github.io/Furniture.test/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/RomanPyryn/Furniture.test"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/RomanPyryn/Furniture.test">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/3d.jpeg 1x, ./img/3d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/3m.jpeg 1x, ./img/3m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/3d.jpeg 1x, ./img/3d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/3m.jpeg 1x, ./img/3m@2x.jpeg 2x"/>
                   <img src="./img/3d.jpeg" alt="Ice cream"/>
                 </picture>
                 <div class="project__overlay">
@@ -506,31 +372,20 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://anastasiia-tarasiuk.github.io/ice-cream-page/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://anastasiia-tarasiuk.github.io/ice-cream-page/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/Anastasiia-Tarasiuk/ice-cream-page"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/Anastasiia-Tarasiuk/ice-cream-page">github</a>
                   </div>
                 </div>
               </div>
-
               <div class="portfolio__item project swiper-slide">
                 <picture class="project__picture">
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="./img/5d.jpeg 1x, ./img/5d@2x.jpeg 2x"
-                  />
-                  <source
-                    media="(min-width: 320px)"
-                    srcset="./img/5m.jpeg 1x, ./img/5m@2x.jpeg 2x"
-                  />
+                  <source media="(min-width: 768px)" srcset="./img/5d.jpeg 1x, ./img/5d@2x.jpeg 2x"/>
+                  <source media="(min-width: 320px)" srcset="./img/5m.jpeg 1x, ./img/5m@2x.jpeg 2x"/>
                   <img src="./img/5d.jpeg" alt="Phonebook"/>
                 </picture>
                 <div class="project__overlay">
@@ -540,31 +395,22 @@
                     <a
                       class="project__view"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://romanpyryn.github.io/goit-react-hw-08-phonebook/"
-                      >View</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://romanpyryn.github.io/goit-react-hw-08-phonebook/">View</a>
                     <a
                       class="project__link"
                       target="_blank"
-											rel="noopener noreferrer nofollow"
-                      href="https://github.com/RomanPyryn/goit-react-hw-08-phonebook"
-                      >github</a
-                    >
+                      rel="noopener noreferrer nofollow"
+                      href="https://github.com/RomanPyryn/goit-react-hw-08-phonebook">github</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="slider-arrow-prev">
-              <svg width="48" height="48">
+            <!-- <div class="slider-arrow-prev"> <svg width="48" height="48">
                 <use href="./img/icons.svg#arrow"></use>
-              </svg>
-            </div>
-            <div class="slider-arrow-next">
-              <svg width="48" height="48">
+            </svg> </div> <div class="slider-arrow-next"> <svg width="48" height="48">
                 <use href="./img/icons.svg#arrow"></use>
-              </svg>
-            </div>
+            </svg> </div> -->
             <div class="swiper-pagination"></div>
           </div>
         </div>
@@ -573,56 +419,44 @@
       <section class="section" id="to-contacts">
         <div class="container container--contacts">
           <h2 class="section__title">Contacts</h2>
-
           <p class="contacts__text">
             Want to know more or just chat? You are welcome!
           </p>
-
-          <a href="mailto:p27roman@gmail.com" rel="noopener noreferrer nofollow"
-            ><button class="button" type="button">Send message</button></a
-          >
-
+          <a href="tel:+380674478783" rel="noopener noreferrer nofollow">
+            <button class="button" type="button">
+              <span>+38 067 447 87 83</span>
+            </button>
+          </a>
           <div class="social">
             <a
               class="social__link"
               target="_blank"
-							rel="noopener noreferrer nofollow"
-              href="https://www.linkedin.com/in/roman-pyryn-895812239/"
-            >
+              rel="noopener noreferrer nofollow"
+              href="https://www.linkedin.com/in/roman-pyryn-895812239/">
               <svg width="40" height="40" aria-label="linkedin">
-								<title>linkedin</title>
+                <title>linkedin</title>
                 <use href="./img/icons.svg#li"></use>
               </svg>
             </a>
-
-            <a
-              class="social__link"
-              target="_blank"
-							rel="noopener noreferrer nofollow"
-              href="https://github.com/RomanPyryn"
-            >
+            <a class="social__link" target="_blank" rel="noopener noreferrer nofollow" href="https://github.com/RomanPyryn">
               <svg width="40" height="40" aria-label="github">
-								<title>github</title>
+                <title>github</title>
                 <use href="./img/icons.svg#gh"></use>
               </svg>
             </a>
-
             <a
               class="social__link"
               target="_blank"
-							rel="noopener noreferrer nofollow"
-              href="https://www.facebook.com/profile.php?id=100002030018777"
-            >
+              rel="noopener noreferrer nofollow"
+              href="https://www.facebook.com/profile.php?id=100002030018777">
               <svg width="40" height="40" aria-label="facebook">
-								<title>facebook</title>
+                <title>facebook</title>
                 <use href="./img/icons.svg#fb"></use>
               </svg>
             </a>
           </div>
-
           <p class="signature">
-            Visit me on <br />
-            LinkedIn, GitHub, Facebook
+            Visit me on <br/> LinkedIn, GitHub, Facebook
           </p>
         </div>
       </section>
@@ -633,13 +467,7 @@
     </footer>
     <!--Up button-->
     <button id="scrollToTopBtn">
-      <img
-        class="up-btn-img"
-        src="./img/up.png"
-        alt="Click to go up"
-        width="40"
-        height="90"
-      />
+      <img class="up-btn-img" src="./img/up.png" alt="Click to go up" width="40" height="90"/>
     </button>
   </body>
 </html>

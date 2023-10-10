@@ -83,7 +83,10 @@ body {
   }
 
   &:nth-child(2n) {
-    background: $color_bg-secondary;
+    background: linear-gradient(90deg, #f6f6f6, #e5e5e5);
+		@media screen and (min-width: 768px) {
+				background: linear-gradient(160deg, #fff, #e5e5e5);
+			}
   }
 }
 
@@ -103,4 +106,49 @@ body {
 
 .current {
   color: $color_text-second;
+}
+
+.button {
+  position: relative;
+  appearance: none;
+  background: #f72359;
+  min-width: 100%;
+  min-height: 42px;
+  padding: 1em 2em;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 50px;
+  margin-bottom: 50px;
+  transition: box-shadow 300ms $cubic;
+
+  span {
+    position: relative;
+    pointer-events: none;
+  }
+
+  &::before {
+    --size: 0;
+
+    content: '';
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4405f7, transparent);
+    transform: translate(-50%, -50%);
+    transition: width 0.2s ease, height 0.2s ease;
+  }
+
+  &:hover::before {
+    --size: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 20px 50px;
+  }
 }

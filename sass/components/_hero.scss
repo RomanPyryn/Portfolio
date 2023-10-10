@@ -64,8 +64,14 @@
 
 .lang__link {
   padding: 0 5px;
+  transition: all 300ms $cubic;
+
+  &:hover,
+  &:focus {
+    color: $color_hover;
+  }
 }
 
 .text__bold {
-	font-weight: 700;
+  font-weight: 700;
 }
