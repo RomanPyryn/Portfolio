@@ -1,18 +1,15 @@
 .portfolio__item {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   color: $color_bg-primary;
 }
-
 .portfolio__picture {
   display: block;
 }
-
 .project__picture img {
   margin-left: auto;
   margin-right: auto;
 }
-
 .project__overlay {
   position: absolute;
   left: 0;
@@ -27,7 +24,6 @@
     transform: translateY(0);
   }
 }
-
 .project__info {
   position: absolute;
   left: 50%;
@@ -35,17 +31,14 @@
   width: 100%;
   transform: translate(-50%, -50%);
 }
-
 .project__title {
   font-size: 32px;
   margin-bottom: 15px;
 }
-
 .project__text {
   font-size: 18px;
   margin-bottom: 40px;
 }
-
 .project__view,
 .project__link {
   display: flex;
@@ -54,26 +47,50 @@
   margin-left: auto;
   margin-right: auto;
   width: 250px;
-  border-radius: 50px;
   outline: none;
 }
-
 .project__view {
-  height: 42px;
-  background-color: $color_bg-primary;
-  font-weight: 700;
-  color: #000;
-  box-shadow: none;
-  margin-bottom: 15px;
-  cursor: pointer;
-  transition: all 300ms $cubic;
-  &:hover,
-  &:focus {
-    box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
-		background-color: rgba(255, 255, 255, 0.6);
-  }
-}
+	display: inline-block;
+	padding: 12px 36px;
+	color: $color_text-second;
+	text-transform: uppercase;
+	transition: all 300ms $cubic;
+	position: relative;
+	overflow: hidden;
+	outline: none;
+	z-index: 1;
 
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $color_bg-secondary;
+		z-index: -2;
+	}
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		height: 100%;
+		background-color: #000;
+		transition: all 300ms $cubic;
+		z-index: -1;
+	}
+
+	&:hover {
+		color: #fff;
+
+		&:before {
+			width: 100%;
+		}
+	}
+}
 .project__link {
   margin-bottom: 5px;
   transform: scale(1);
@@ -83,42 +100,76 @@
     transform: scale(1.2);
   }
 }
-
 @media screen and (min-width: 768px) {
   .project__title {
     font-size: 40px;
     margin-bottom: 15px;
   }
-
   .project__text {
     font-size: 24px;
     margin-bottom: 50px;
   }
-
   .project__view {
     margin-bottom: 15px;
   }
-
   .project__link {
     margin-bottom: 10px;
   }
 }
-
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-wrapper {
   padding-bottom: 50px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 120px;
+  }
 }
-
+.swiper-pagination {
+  width: auto;
+}
 .swiper-pagination-bullet-active.swiper-pagination-bullet {
-	background-color: $color_text-second;
-	scale: 1.2;
-	
+  background-color: $color_text-second;
+  scale: 1.2;
 }
 .swiper-pagination-bullet {
-	width: 12px;
-	height: 12px;
+  width: 12px;
+  height: 12px;
+}
+.slider-arrow {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    bottom: 45px;
+    height: 50px;
+    z-index: 10;
+    color: $color_bg-secondary;
+    fill: $color_bg-secondary;
+    background-color: $color_text-second;
+    transition: all 300ms $cubic;
+    &:hover,
+    &:focus {
+      background-color: $color_bg-secondary;
+      color: $color_text-second;
+      fill: $color_text-second;
+    }
+  }
+}
+.slider-arrow-next {
+  padding-left: 20px;
+  right: 30%;
+  svg {
+    transform: rotateY(180deg);
+  }
+}
+.slider-arrow-prev {
+  padding-right: 20px;
+  left: 30%;
 }

@@ -8,9 +8,17 @@ let swiper = new Swiper('.swiper', {
   mousewheel: true,
   keyboard: true,
   loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: true,
-	},
 	grabCursor: true,
+	// navigation: {
+	// 	nextEl: null,
+  //   prevEl: null,
+	// },
+	breakpoints: {
+    768: {
+      navigation: {
+        nextEl: '.slider-arrow-next',
+        prevEl: '.slider-arrow-prev',
+      },
+    },
+  },
 });
